@@ -12,7 +12,7 @@ from hashlib import sha256
 from pathlib import Path
 #uses given hash function
 def get_hash(to_hash):
-    return sha256(to_hash.encode('utf-8')).hexdigest().upper()  # Ensure to use .upper() for consistency
+    return sha256(to_hash.encode('utf-8')).hexdigest().upper()
 
 #Try/except blocks to read the hash
 try:
